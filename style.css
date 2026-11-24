@@ -1,0 +1,29 @@
+:root{--bg:#f3f1ec;--card:#fff;--ink:#16181d;--mute:#6b6f78;--line:#dcd9d0;--ff:#e8590c;--ef:#0b7a5a;--ok:#0b7a5a}
+@media (prefers-color-scheme:dark){:root{--bg:#14161a;--card:#1d2026;--ink:#eef0f3;--mute:#9298a3;--line:#2e323a;--ff:#ff7a33;--ef:#2bc48f;--ok:#2bc48f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:500 15px/1.4 Barlow,system-ui,sans-serif}
+.wrap{max-width:720px;margin:0 auto;padding:16px}
+.head{display:flex;justify-content:space-between;align-items:center;gap:8px}
+h1{font:700 34px/1 'Barlow Condensed',sans-serif;margin:8px 0 12px}
+h2{font:700 22px/1.1 'Barlow Condensed',sans-serif;margin:0 0 8px}
+.nav{display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap}
+.nav button,.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:9px 14px;font:600 15px Barlow,sans-serif;border-radius:20px;cursor:pointer}
+.nav button.on,.chip.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;margin-bottom:10px;border-left:5px solid var(--g,var(--line))}
+.card.plain{border-left-width:1px}
+.ff{--g:var(--ff)}.ef{--g:var(--ef)}
+.top{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.t{font:700 22px/1.1 'Barlow Condensed',sans-serif}
+.pool{font:700 22px 'Barlow Condensed',sans-serif;color:var(--g)}
+.mute{color:var(--mute);font-size:13px}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;align-items:center}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px;width:100%;min-width:0}
+label{display:block;margin:8px 0 3px;font-weight:600;font-size:14px}
+.btn{font:700 15px Barlow,sans-serif;background:var(--ink);color:var(--bg);border:0;border-radius:8px;padding:10px 14px;cursor:pointer}
+.btn.g{background:var(--g,var(--ink));color:#fff}
+.btn.ghost{background:none;color:var(--mute);border:1px solid var(--line)}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--ef);outline-offset:1px}
+.ok{color:var(--ok);font-weight:700}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.big{font:700 40px 'Barlow Condensed',sans-serif}
+.pl{font-size:14px;padding:4px 0;display:flex;justify-content:space-between;gap:8px;border-top:1px solid var(--line);margin-top:4px}
